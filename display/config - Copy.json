@@ -1,0 +1,62 @@
+{
+  "GrabLastDay": false,
+  "url": "http://cs370.imaoreo.io/data",
+  "background": "field.gif",
+  "padding": 10,
+  "displaySize": [
+    800,
+    440
+  ],
+  "graphs": {
+    "temperature": {
+      "title": "Temperature over Time",
+      "units": "°C",
+      "color": "Red",
+      "size": [
+        270,
+        80
+      ],
+      "midpoint": 20,
+      "range": 25,
+      "dataPoints": 5
+    },
+    "dust": {
+      "title": "Dust Concentration",
+      "units": "pcs/283ml",
+      "color": "Blue",
+      "size": [
+        270,
+        80
+      ],
+      "midpoint": 500,
+      "range": 500,
+      "dataPoints": 5
+    },
+    "airQuality": {
+      "title": "Relative Air Quality",
+      "units": "%",
+      "color": "Green",
+      "size": [
+        270,
+        80
+      ],
+      "midpoint": 100,
+      "range": 100,
+      "dataPoints": 5
+    },
+    "gasConcentration": {
+      "title": "Gas Resistance",
+      "units": "kOhms",
+      "color": "Purple",
+      "size": [
+        270,
+        80
+      ],
+      "midpoint": 50,
+      "range": 50,
+      "dataPoints": 5
+    }
+  },
+  "pollingTimeMS": 10000,
+  "WindowTitle": "Air Quality"
+}

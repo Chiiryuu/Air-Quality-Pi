@@ -1,0 +1,8 @@
+flask
+pylint
+Flask-Script==2.0.5
+coverage==4.3.4
+sqlalchemy
+Flask-SQLAlchemy
+uwsgi
+psycopg2

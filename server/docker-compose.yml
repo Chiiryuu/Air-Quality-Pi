@@ -1,0 +1,32 @@
+version: '3.1'
+
+services:
+
+    backend_370:
+        image: flask
+        build: ./server_370
+        restart: always
+        volumes:
+          - ./server_370:/usr/src
+        networks:
+          - back_net
+
+    db:
+        image: postgres:latest
+        restart: always
+        hostname: postgres.food.io.net
+        ports:
+                - 5432:5432
+        environment:
+                POSTGRES_PASSWORD: jad3Bis0n
+                POSTGRES_DB: food
+        volumes:
+                - db_volume:/var/lib/postgresql/data
+        networks:
+                - back_net
+networks:
+    back_net:
+        external: true
+
+volumes:
+    db_volume:
